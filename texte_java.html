@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script type="text/javascript">
+        let mon_prenom = "Swann";
+    alert("Hello " + mon_prenom);
+        
+     function validationFormulaire() {
+            var x= document.forms ["formContact"] ["messageContact"] . value;
+            if(x==null || x=="") {
+                alert("vous avez oublié d'insérer un message");
+                return false;
+            }
+        }
+        
+    </script>
+</head>
+
+<body>
+    <h1>Formulaire de Contact</h1>
+    
+    <form name="formContact" onsubmit="validationFormulaire()">
+        Nom :<br>
+        <input type="text"><br>
+        Email :<br>
+        <input type="email"><br>
+        T&eacute;l&agrave;phone :<br>
+        <input type="tel"><br>
+Message: <br>        
+        <textarea id="form-textarea" name="messageContact"></textarea><br>
+        <input type="submit" value="Envoyer"><br>
+    </form>
+</body>
+</html>

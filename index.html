@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        
+        html {
+            background-color: lightskyblue;
+        }
+        body{
+            font-family: "Georgia", "Arial", "sans-serif";
+/*            color :*/
+        }
+        div {
+            background-color: gray;
+            border: 1px solid red;
+            color: darkred;
+        }
+
+        img {
+            float: right;
+        }
+        .Inscription {
+            background-color: darkgray;
+            border: 4px solid black;
+            color:black;
+             }
+        a {
+            color:green;
+        }
+        
+    
+        
+        .Contact {
+            color: black;
+        }
+        
+        @media screen and (max-width :640px) 
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <a href="https://www.google.fr/"> <img src=Fnaf.jpg></a>
+        <!-- =mailto: adresse@email.com (Ouvre une boite mail)
+  tel: numero (Compose un numero)-->
+        <h1>Swann Nguyen</h1>
+
+        <p><strong><a href="https://www.google.fr/">Addresse :</a></strong> 248 Rue de L'impératrice</p>
+        <a class="Contact" href="https://www.google.fr/"><strong>Contactez-moi</strong> via mon formulaire</a>
+        <p><strong>Mail :</strong>aifor@gmail.com</p>
+        <p><strong>Phone :</strong>06 46 02 72 29</p>
+
+        <h2>Antécédents de travail</h2>
+
+        <ol>
+            <li>Agent de Restauration</li>
+            <li>Employé Libre-service</li>
+        </ol>
+    </div>
+<br>
+   <br>
+   <br>
+   
+    <div class=Inscription>
+        <form>
+
+            <p>Pseudo :<input placeholder="Pseudo" type="text" name="Pseudo" autofocus></p>
+            
+           <p>Mot de Passe :<input placeholder="Mot de passe" type="password"></p>
+            
+            <p>Email :<input placeholder="email" type="email"></p>
+    
+           <p>Tel : <input placeholder="tel" type="tel"></p>
+           
+            <p>Sexe
+             <input value="Monsieur" type="radio" name=Sexe> Monsieur
+            <input value="Madame" type="radio" name=Sexe> Madame</p>
+            <p>Vous aimez :
+            <br>
+            
+            Jeux Videos<input value="Jeux Videos" type="checkbox" name=aime>
+            <br>
+            Cuisine<input value="Cuisine" type="checkbox" name=aime> 
+            <br>
+            Lecture<input value="Lecture (Bd, mangas)" type="checkbox" name=aime>
+            <br>
+            Shopping<input value="Shopping" type="checkbox" name=aime>
+            </p>
+            
+            <br>
+            <p class=Habitat>Vous habitez à
+           
+            <select>
+                <option>Berck</option>
+                <option>Etaples</option>
+                <option>Arras</option>
+                <option>Montreuil</option>
+            </select></p>
+            Date : <input value=Date type=date>
+            <br>
+            Inutile :<input value=Inutile type=range>
+            <br>
+            <br>
+<input class=Inutile value="Envoyer" type=submit>
+</form>
+    </div>
+    
+</body>
+
+</html>
